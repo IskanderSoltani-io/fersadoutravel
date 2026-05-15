@@ -32,8 +32,8 @@ body{
 
 /* LANG */
 .lang-toggle{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  z-index:1100;display:flex;gap:.22rem;
+  position:static;
+  display:flex;gap:.22rem;align-items:center;
   background:rgba(6,15,26,.88);backdrop-filter:blur(12px);
   border-radius:2rem;padding:.26rem;
   border:1px solid rgba(2,158,232,.3);
@@ -270,15 +270,13 @@ footer a:hover{color:var(--orange);}
     <div class="logo-circle"><img src="fersadoutravellogo.png" alt="Fersadou Travel logo"></div>
     <div>
       <div class="logo-text">Fersadou <span>Travel</span></div>
-      <div class="nav-tagline" data-fr="Votre agence de voyage" data-en="Your travel agency">Votre agence de voyage</div>
     </div>
   </div>
-  <div class="lang-toggle">
-    <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
-    <button id="btn-en" onclick="setLang('en')">EN</button>
-  </div>
   <div style="display:flex;gap:1rem;align-items:center;">
-    <a href="tel:0554613053" style="color:var(--orange);font-size:.85rem;font-weight:600;text-decoration:none;">📞 0554 61 30 53</a>
+    <div class="lang-toggle">
+      <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
   </div>
 </nav>
 
